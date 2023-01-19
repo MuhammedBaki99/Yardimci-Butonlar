@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Yardımcı Butonlar</title>
+	<link rel="stylesheet" type="text/css" href="../Yardımcı Butonlar/CSS/style.css" />
+	<script src="https://kit.fontawesome.com/0c40124e47.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="color"><i class="fa-solid fa-brush palet fa-2x"></i>
+	<div class="menu ani" id="menu">
+	<div class="blue" onClick="renkdegis('#95DCF7')"></div>
+	<div class="orange" onClick="renkdegis('#FFE895')"></div>
+	<div class="green" onClick="renkdegis('#A4F2AA')"></div>
+	<div class="white" onClick="renkdegis('aliceblue')"></div>
+	</div> 
+	</div>
+	<div class="login">
+	<div class="user"><i class="fa-solid fa-user fa-2x user1"></i></div>
+	<div class="giris">
+		<form action="girisyap.php" method="get">
+		<label for="kullanıcıadı">Kullanıcı Adı:</label>
+		<input type="text" id="kullanıcıadı" name="kullaniciadi" placeholder="kullanıcıadı" /><br>
+		<label for="sifre">Şifre:</label>
+		<input type="password" id="sifre" name="sifre" placeholder="sifre" /><br>
+		<label for="eposta">E-Posta:</label>
+		<input type="email" id="eposta" name="eposta" placeholder="E-Posta"/>
+		<br><br><input type="submit" value="Giriş Yap" name="giris" id="submit" />
+		</form>
+	</div>
+	</div>
+	
+	
+	<script>
+	function renkdegis(renk){
+		document.body.style.background = renk;
+	}
+	</script>
+</body>
+</html>
